@@ -38,8 +38,6 @@
             this.Mask1 = new System.Windows.Forms.TextBox();
             this.Mask3 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.WM = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.W4 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -48,8 +46,6 @@
             this.W1 = new System.Windows.Forms.TextBox();
             this.W3 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.NetM = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.Net4 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -63,27 +59,27 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.IPM = new System.Windows.Forms.NumericUpDown();
+            this.IP4 = new System.Windows.Forms.NumericUpDown();
+            this.IP3 = new System.Windows.Forms.NumericUpDown();
+            this.IP2 = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Calc = new System.Windows.Forms.Button();
-            this.Hosts = new System.Windows.Forms.TextBox();
             this.IP1 = new System.Windows.Forms.NumericUpDown();
-            this.IP2 = new System.Windows.Forms.NumericUpDown();
-            this.IP3 = new System.Windows.Forms.NumericUpDown();
-            this.IP4 = new System.Windows.Forms.NumericUpDown();
-            this.IPM = new System.Windows.Forms.NumericUpDown();
+            this.Hosts = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IP1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IP2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IP3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IP4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IPM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IP4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IP3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IP2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IP1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -123,7 +119,7 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 210F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 272F));
             this.tableLayoutPanel6.Controls.Add(this.Mask4, 6, 0);
             this.tableLayoutPanel6.Controls.Add(this.label23, 5, 0);
             this.tableLayoutPanel6.Controls.Add(this.label24, 3, 0);
@@ -222,8 +218,6 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel4.Controls.Add(this.WM, 8, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label14, 7, 0);
             this.tableLayoutPanel4.Controls.Add(this.W4, 6, 0);
             this.tableLayoutPanel4.Controls.Add(this.label15, 5, 0);
             this.tableLayoutPanel4.Controls.Add(this.label16, 3, 0);
@@ -238,26 +232,6 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(477, 37);
             this.tableLayoutPanel4.TabIndex = 8;
-            // 
-            // WM
-            // 
-            this.WM.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.WM.Enabled = false;
-            this.WM.Location = new System.Drawing.Point(223, 8);
-            this.WM.Name = "WM";
-            this.WM.Size = new System.Drawing.Size(34, 20);
-            this.WM.TabIndex = 6;
-            this.WM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label14
-            // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(208, 12);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(9, 13);
-            this.label14.TabIndex = 8;
-            this.label14.Text = "/";
             // 
             // W4
             // 
@@ -342,8 +316,6 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel3.Controls.Add(this.NetM, 8, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label10, 7, 0);
             this.tableLayoutPanel3.Controls.Add(this.Net4, 6, 0);
             this.tableLayoutPanel3.Controls.Add(this.label11, 5, 0);
             this.tableLayoutPanel3.Controls.Add(this.label12, 3, 0);
@@ -358,26 +330,6 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(477, 37);
             this.tableLayoutPanel3.TabIndex = 7;
-            // 
-            // NetM
-            // 
-            this.NetM.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.NetM.Enabled = false;
-            this.NetM.Location = new System.Drawing.Point(223, 8);
-            this.NetM.Name = "NetM";
-            this.NetM.Size = new System.Drawing.Size(34, 20);
-            this.NetM.TabIndex = 6;
-            this.NetM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(208, 12);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(9, 13);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "/";
             // 
             // Net4
             // 
@@ -530,6 +482,72 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(477, 37);
             this.tableLayoutPanel2.TabIndex = 6;
             // 
+            // IPM
+            // 
+            this.IPM.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.IPM.Location = new System.Drawing.Point(303, 8);
+            this.IPM.Maximum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            0});
+            this.IPM.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.IPM.Name = "IPM";
+            this.IPM.Size = new System.Drawing.Size(54, 20);
+            this.IPM.TabIndex = 13;
+            this.IPM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.IPM.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // IP4
+            // 
+            this.IP4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.IP4.Location = new System.Drawing.Point(228, 8);
+            this.IP4.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.IP4.Name = "IP4";
+            this.IP4.Size = new System.Drawing.Size(54, 20);
+            this.IP4.TabIndex = 12;
+            this.IP4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // IP3
+            // 
+            this.IP3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.IP3.Location = new System.Drawing.Point(153, 8);
+            this.IP3.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.IP3.Name = "IP3";
+            this.IP3.Size = new System.Drawing.Size(54, 20);
+            this.IP3.TabIndex = 11;
+            this.IP3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // IP2
+            // 
+            this.IP2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.IP2.Location = new System.Drawing.Point(78, 8);
+            this.IP2.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.IP2.Name = "IP2";
+            this.IP2.Size = new System.Drawing.Size(54, 20);
+            this.IP2.TabIndex = 10;
+            this.IP2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // label9
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -581,16 +599,6 @@
             this.Calc.UseVisualStyleBackColor = true;
             this.Calc.Click += new System.EventHandler(this.Calc_Click);
             // 
-            // Hosts
-            // 
-            this.Hosts.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Hosts.Enabled = false;
-            this.Hosts.Location = new System.Drawing.Point(125, 140);
-            this.Hosts.Name = "Hosts";
-            this.Hosts.Size = new System.Drawing.Size(83, 20);
-            this.Hosts.TabIndex = 11;
-            this.Hosts.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // IP1
             // 
             this.IP1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -605,71 +613,15 @@
             this.IP1.TabIndex = 9;
             this.IP1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // IP2
+            // Hosts
             // 
-            this.IP2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.IP2.Location = new System.Drawing.Point(78, 8);
-            this.IP2.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.IP2.Name = "IP2";
-            this.IP2.Size = new System.Drawing.Size(54, 20);
-            this.IP2.TabIndex = 10;
-            this.IP2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // IP3
-            // 
-            this.IP3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.IP3.Location = new System.Drawing.Point(153, 8);
-            this.IP3.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.IP3.Name = "IP3";
-            this.IP3.Size = new System.Drawing.Size(54, 20);
-            this.IP3.TabIndex = 11;
-            this.IP3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // IP4
-            // 
-            this.IP4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.IP4.Location = new System.Drawing.Point(228, 8);
-            this.IP4.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.IP4.Name = "IP4";
-            this.IP4.Size = new System.Drawing.Size(54, 20);
-            this.IP4.TabIndex = 12;
-            this.IP4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // IPM
-            // 
-            this.IPM.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.IPM.Location = new System.Drawing.Point(303, 8);
-            this.IPM.Maximum = new decimal(new int[] {
-            23,
-            0,
-            0,
-            0});
-            this.IPM.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.IPM.Name = "IPM";
-            this.IPM.Size = new System.Drawing.Size(54, 20);
-            this.IPM.TabIndex = 13;
-            this.IPM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.IPM.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.Hosts.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Hosts.Enabled = false;
+            this.Hosts.Location = new System.Drawing.Point(125, 140);
+            this.Hosts.Name = "Hosts";
+            this.Hosts.Size = new System.Drawing.Size(83, 20);
+            this.Hosts.TabIndex = 11;
+            this.Hosts.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Ipcalc
             // 
@@ -692,11 +644,11 @@
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IP1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IP2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IP3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IP4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IPM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IP4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IP3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IP2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IP1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -724,8 +676,6 @@
         private System.Windows.Forms.TextBox Mask1;
         private System.Windows.Forms.TextBox Mask3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.TextBox WM;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox W4;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
@@ -734,8 +684,6 @@
         private System.Windows.Forms.TextBox W1;
         private System.Windows.Forms.TextBox W3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.TextBox NetM;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox Net4;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
